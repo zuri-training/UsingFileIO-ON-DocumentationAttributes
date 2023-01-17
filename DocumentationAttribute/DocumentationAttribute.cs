@@ -11,12 +11,7 @@ namespace Documentation
             public string Input { get; }
             public string Output { get; }
 
-            public DocumentAttribute(string description)
-            {
-                Description = description;
-                Input = null ;
-                Output = null ;
-            }
+            
             public DocumentAttribute(string description, string input = "" , string output = "")
             {
                 Description = description;
