@@ -9,27 +9,27 @@ public class PersonalDetails
 {
         public IPersonal myself;
 
-        [Document("This adds the battery to the torchlight", "IBattery")]
+        [Document("This tells you about Ben", "IPersonal")]
 
     public PersonalDetails(IPersonal myself)
         {
             this.myself = myself;
         }
 
-        [Document("DisplayBatteryName")]
-        public void DisplayBatteryName()
+        [Document("DisplayAge")]
+        public void DisplayAge()
         {
-            Console.WriteLine(myself.brandName);
+            Console.WriteLine(myself.Age);
         }
 
-        [Document("DisplayBatteryLife")]
-        public void DisplayBatteryLife()
+        [Document("DisplayGender")]
+        public void DisplayGender()
         {
-            Console.WriteLine(myself.batteryLife);
+            Console.WriteLine(myself.Gender);
         }
 
-        [Document("This indicate that we can turn on the torchlight")]
-        public bool CanTurnOn
+        [Document("This checks if Ben is a good guy")]
+        public bool GoodGuy
         {
             get
             {
@@ -41,8 +41,8 @@ public class PersonalDetails
             }
         }
 
-        [Document("This indicates the brightness of the battery")]
-        public enum TorchBrightness
+        [Document("This indicates how reposible Ben is")]
+        public enum Responsible
         {
             Low = 1,
             Medium = 2,
@@ -58,50 +58,23 @@ public class PersonalDetails
         public string Gender { get; }
     }
 
-    [Document("This is a duracell battery that works with a torchlight")]
-    public class Duracell : IPersonal
+    [Document("This is a Bezao database of Ben")]
+    public class Bezao : IPersonal
     {
-        [Document("This is the brand name of the battery", "", "string")]
-        public string Age
+        [Document("Shows how old Ben is ", "", "int")]
+        public int Age
         {
             get
             {
-                return "23";
+                return 23;
             }
         }
 
-        [Document("This is the life of the battery", "", "int")]
-        public int Gender{
+        [Document("Shows Ben's Gender", "", "string")]
+        public string Gender{
             get
             {
                 return "Male";
-            }
-        }
-    }
-
-
-    [Document("This is a Tiger battery that works with a torchlight")]
-
-    public class Tiger : IPersonal
-    {
-
-        [Document("This is the brand name of the battery", "", "string")]
-        public string brandName
-        {
-            get
-            {
-                return "Tiger";
-            }
-        }
-
-
-        [Document("This is the life of the battery", "", "int")]
-
-        public int batteryLife
-        {
-            get
-            {
-                return 35;
             }
         }
     }
