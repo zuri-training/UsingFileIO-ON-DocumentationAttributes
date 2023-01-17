@@ -1,7 +1,9 @@
 ﻿using System.Reflection;
+using static Documentation.DocumentationAttribute;
 
 namespace Documentation;
-public class Documentation
+
+public class DocumentationModel
 {
     public static void GetDocs()
     {
@@ -85,3 +87,4 @@ public class Documentation
         Console.WriteLine();
 
     }
+}

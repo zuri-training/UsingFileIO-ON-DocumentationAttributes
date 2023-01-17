@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 namespace Documentation
 {
     public class DocumentationAttribute
@@ -13,10 +14,10 @@ namespace Documentation
             public DocumentAttribute(string description)
             {
                 Description = description;
-                Input = "";
-                Output = "";
+                Input = null ;
+                Output = null ;
             }
-            public DocumentAttribute(string description, string input , string output )
+            public DocumentAttribute(string description, string input = "" , string output = "")
             {
                 Description = description;
                 Input = input;
