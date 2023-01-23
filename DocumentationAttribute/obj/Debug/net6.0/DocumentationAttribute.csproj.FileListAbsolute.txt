@@ -13,3 +13,18 @@
 /Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/DocumentationAttribute/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.pdb
 /Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/DocumentationAttribute/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.genruntimeconfig.cache
 /Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/DocumentationAttribute/DocumentationAttribute/obj/Debug/net6.0/ref/DocumentationAttribute.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/bin/Debug/net6.0/DocumentationAttribute
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/bin/Debug/net6.0/DocumentationAttribute.deps.json
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/bin/Debug/net6.0/DocumentationAttribute.runtimeconfig.json
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/bin/Debug/net6.0/DocumentationAttribute.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/bin/Debug/net6.0/DocumentationAttribute.pdb
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.csproj.AssemblyReference.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.AssemblyInfoInputs.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.AssemblyInfo.cs
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/refint/DocumentationAttribute.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.pdb
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/DocumentationAttribute.genruntimeconfig.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/ LearningDynamicAssemblyLoad /UsingFileIO-ON-DocumentationAttributes/DocumentationAttribute/obj/Debug/net6.0/ref/DocumentationAttribute.dll

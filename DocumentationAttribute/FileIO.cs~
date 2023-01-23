@@ -1,0 +1,34 @@
+﻿using System;
+using System.Xml.Linq;
+using System.IO;
+using Documentation;
+
+namespace DocumentationAttribute
+{
+    public class FileIO
+    {
+        private string doc;
+        public string Doc
+        {
+            get
+            {
+                return doc;
+            }
+            set
+            {
+                if (value != "")
+                    doc = value;
+            }
+        }
+
+        protected void Fileinput() 
+	    {
+            string writeText = DocumentationModel.GetDocs().ToString();   // Create a text string
+            File.WriteAllText("filename.txt", writeText);  // Create a file and write the content of writeText to it
+
+            string readText = File.ReadAllText("filename.txt");  // Read the contents of the file
+            Console.WriteLine(readText);
+        }
+    }
+}
+

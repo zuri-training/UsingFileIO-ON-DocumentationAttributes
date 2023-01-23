@@ -1,15 +1,17 @@
 ﻿using System.Reflection;
+using System.Text;
 using static Documentation.DocumentationAttribute;
 
 namespace Documentation;
 
 public class DocumentationModel
 {
+    public static StringBuilder GetDocString = new();
     public static void GetDocs()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        Console.WriteLine("| Code Documentation |");
-        Console.WriteLine();
+        GetDocString.AppendLine("| Code Documentation |\n\n");
+        
         var types = assembly.GetTypes();
 
 
@@ -22,9 +24,9 @@ public class DocumentationModel
             {
                 if (type.IsClass)
                 {
-                    Console.WriteLine("Class: " + type.Name);
-                    Console.WriteLine("\tDescription: " + ((DocumentAttribute)attributes[0]).Description);
-                    Console.WriteLine();
+                    GetDocString.AppendLine($"Class: {type.Name}");
+                    GetDocString.AppendLine("\tDescription: \n\n" + ((DocumentAttribute)attributes[0]).Description);
+                   
 
 
                     foreach (ConstructorInfo constructor in type.GetConstructors())
@@ -32,10 +34,10 @@ public class DocumentationModel
                         var constructorAttributes = constructor.GetCustomAttributes(typeof(DocumentAttribute), true);
                         if (constructorAttributes.Length > 0)
                         {
-                            Console.WriteLine("Constructor: " + constructor.Name);
-                            Console.WriteLine("\tDescription: " + ((DocumentAttribute)constructorAttributes[0]).Description);
-                            Console.WriteLine("\tInput: " + ((DocumentAttribute)constructorAttributes[0]).Input);
-                            Console.WriteLine();
+                            GetDocString.AppendLine("Constructor: " + constructor.Name);
+                            GetDocString.AppendLine("\tDescription: " + ((DocumentAttribute)constructorAttributes[0]).Description);
+                            GetDocString.AppendLine("\tInput: \n\n" + ((DocumentAttribute)constructorAttributes[0]).Input);
+                            
                         }
                     }
 
@@ -44,11 +46,11 @@ public class DocumentationModel
                         var methodAttributes = method.GetCustomAttributes(typeof(DocumentAttribute), true);
                         if (methodAttributes.Length > 0)
                         {
-                            Console.WriteLine("Method: " + method.Name);
-                            Console.WriteLine("\tDescription: " + ((DocumentAttribute)methodAttributes[0]).Description);
-                            Console.WriteLine("\tInput: " + ((DocumentAttribute)methodAttributes[0]).Input);
-                            Console.WriteLine("\tOutput: " + ((DocumentAttribute)methodAttributes[0]).Output);
-                            Console.WriteLine();
+                            GetDocString.AppendLine("Method: " + method.Name);
+                            GetDocString.AppendLine("\tDescription: " + ((DocumentAttribute)methodAttributes[0]).Description);
+                            GetDocString.AppendLine("\tInput: " + ((DocumentAttribute)methodAttributes[0]).Input);
+                            GetDocString.AppendLine("\tOutput: \n\n" + ((DocumentAttribute)methodAttributes[0]).Output);
+                           
                         }
                     }
 
@@ -57,10 +59,10 @@ public class DocumentationModel
                         var propertyAttributes = property.GetCustomAttributes(typeof(DocumentAttribute), true);
                         if (propertyAttributes.Length > 0)
                         {
-                            Console.WriteLine("Property: " + property.Name);
-                            Console.WriteLine("\tDescription: " + ((DocumentAttribute)propertyAttributes[0]).Description);
-                            Console.WriteLine("\tOutput: " + ((DocumentAttribute)propertyAttributes[0]).Output);
-                            Console.WriteLine();
+                            GetDocString.AppendLine("Property: " + property.Name);
+                            GetDocString.AppendLine("\tDescription: " + ((DocumentAttribute)propertyAttributes[0]).Description);
+                            GetDocString.AppendLine("\tOutput: \n\n" + ((DocumentAttribute)propertyAttributes[0]).Output);
+                            
                         }
                     }
 
@@ -68,23 +70,25 @@ public class DocumentationModel
 
                 if (type.IsEnum)
                 {
-                    Console.WriteLine("Enum: " + type.Name);
-                    Console.WriteLine("\tDescription: " + ((DocumentAttribute?)attributes.SingleOrDefault(a => a.GetType() == typeof(DocumentAttribute)))?.Description);
+                    GetDocString.AppendLine("Enum: " + type.Name);
+                    GetDocString.AppendLine("\tDescription: " + ((DocumentAttribute?)attributes.SingleOrDefault(a => a.GetType() == typeof(DocumentAttribute)))?.Description);
 
                     string[] names = type.GetEnumNames();
                     foreach (string name in names)
                     {
-                        Console.WriteLine(name);
+                        GetDocString.AppendLine(name);
 
                     }
-                    Console.WriteLine();
+                    GetDocString.AppendLine("  ");
                 }
 
             }
 
         }
-        Console.WriteLine("| End of Documentation |");
+        GetDocString.Append("| End of Documentation |");
         Console.WriteLine();
 
     }
+    
+
 }
