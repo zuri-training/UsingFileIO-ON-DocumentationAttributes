@@ -41,7 +41,7 @@ public class PersonalDetails
             }
         }
 
-        [Document("This indicates how reposible Ben is")]
+        [Document("This indicates how responsible Ben is")]
         public enum Responsible
         {
             Low = 1,

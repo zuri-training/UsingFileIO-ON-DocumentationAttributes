@@ -26,9 +26,9 @@ namespace DocumentationAttribute
         public static void WriteToTXT() 
 	    {
             //string writeText = GetDocString;// Create a text string
-            File.WriteAllText("filename.txt", GetDocString.ToString());  // Create a file and write the content of writeText to it
+            File.WriteAllText("Documentation.txt", GetDocString.ToString());  // Create a file and write the content of writeText to it
 
-            Console.WriteLine("Enter 0 to Exit to Main Menu or Any key to display to Console");
+            Console.WriteLine("Enter 0 to Exit to Main Menu or Any key to Read to the Console");
             string input2 = Console.ReadLine();
 
             switch (input2.ToLower())
@@ -46,7 +46,7 @@ namespace DocumentationAttribute
         }
         public static void ReadTXT()
         {
-            string readText = File.ReadAllText("filename.txt");  // Read the contents of the file
+            string readText = File.ReadAllText("Documentation.txt");  // Read the contents of the file
             Console.WriteLine(readText);
         }
     }

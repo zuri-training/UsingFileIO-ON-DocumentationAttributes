@@ -86,7 +86,7 @@ public class DocumentationModel
 
         }
         GetDocString.Append("| End of Documentation |");
-        Console.WriteLine();
+        
 
     }
     

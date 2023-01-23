@@ -42,7 +42,7 @@ Property: Gender
 
 string
 Enum: Responsible
-	Description: This indicates how reposible Ben is
+	Description: This indicates how responsible Ben is
 Low
 Medium
 High
