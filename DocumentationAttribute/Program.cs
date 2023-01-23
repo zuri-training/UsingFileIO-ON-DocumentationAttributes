@@ -9,17 +9,24 @@ class Program
     static void Main(string[] args)
     {
         GetDocs();
-        Console.WriteLine("\t***************************************\nWhat Operation do you want to perfom \n{\"TXT}\", \"JSON\"");
-        string input = Console.ReadLine();
-        switch (input.ToLower())
-        {
-            case "txt":
-                break;
-            default:
-                break;
-        }
-        FileIO.Fileinput();
+	    Menu();
     }
+	    public static void Menu() 
+	    {
+            Console.WriteLine("\t***************************************\nWhat Operation do you want to perfom \nEnter:\n1. For \"TXT\"\n2. For \"JSON\"");
+            string input = Console.ReadLine();
+            switch (input.ToLower())
+            {
+                case "txt":
+                    FileTXT.WriteToTXT();
+                    break;
+                default:
+                Console.Clear();
+                Console.WriteLine($"\"{input}\" is invalid ");
+                Menu();
+                    break;
+            }
+        } 
     public class FileInfoTypeOperations
     {
         public static void CreateAFile()
