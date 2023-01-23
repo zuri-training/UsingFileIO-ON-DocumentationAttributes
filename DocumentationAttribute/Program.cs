@@ -9,6 +9,15 @@ class Program
     static void Main(string[] args)
     {
         GetDocs();
+        Console.WriteLine("\t***************************************\nWhat Operation do you want to perfom \n{\"TXT}\", \"JSON\"");
+        string input = Console.ReadLine();
+        switch (input.ToLower())
+        {
+            case "txt":
+                break;
+            default:
+                break;
+        }
         FileIO.Fileinput();
     }
     public class FileInfoTypeOperations
